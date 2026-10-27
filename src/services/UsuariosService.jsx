@@ -7,10 +7,12 @@ async function ObtenerUsuarios(name = "") {
           url = `https://jsonplaceholder.typicode.com/users?name=${name}`;        
         }
         else{
-          url = 'https://jsonplaceholder.typicode.com/users';        
+          // url = 'https://jsonplaceholder.typicode.com/users';        
+          url = 'http://localhost:3000/usuarios';        
         }
 
         const resultado = await fetch(url);
+        
         if (!resultado.ok){
           throw new Error("Problemas al mostrar los datos");
         }           

@@ -55,7 +55,7 @@ function ListarUsuarios() {
           {
             usuarios.map((u)=>{
               return (                 
-                <Tarjeta key={u.id} nombreUsuario={u.username} correo={u.email}></Tarjeta>
+                <Tarjeta key={u.id} nombreUsuario={u.nombre}></Tarjeta>
               )
             })
           }                 
