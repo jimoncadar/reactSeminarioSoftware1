@@ -4,7 +4,7 @@ async function ObtenerUsuarios(name = "") {
   
         let url = '';
         if (name != ''){
-          url = `https://jsonplaceholder.typicode.com/users?name=${name}`;        
+          url = `http://localhost:3000/usuarios/${name}`;        
         }
         else{
           // url = 'https://jsonplaceholder.typicode.com/users';        
